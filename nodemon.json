@@ -1,0 +1,3 @@
+{
+  "ignore": ["vinosbrr", "node_modules", "database", "logs"]
+}
