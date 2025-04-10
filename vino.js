@@ -1017,7 +1017,7 @@ module.exports = vino = async (vino, m, msg, store, groupCache) => {
 			}
 			break
 			case 'sc': case 'script': {
-				await m.reply(`https://github.com/vinosbrr/hitori\n⬆️ Itu Sc nya cuy`, {
+				await m.reply(`https://github.com/vinosbrr/Sbrr-Bot\n⬆️ Itu Sc nya cuy`, {
 					contextInfo: {
 						forwardingScore: 10,
 						isForwarded: true,
@@ -2141,7 +2141,7 @@ module.exports = vino = async (vino, m, msg, store, groupCache) => {
 			break
 			case 'tinyurl': case 'shorturl': case 'shortlink': {
 				if (!isLimit) return m.reply(mess.limit)
-				if (!text || !isUrl(text)) return m.reply(`Example: ${prefix + command} https://github.com/vinosbrr/hitori`)
+				if (!text || !isUrl(text)) return m.reply(`Example: ${prefix + command} https://github.com/vinosbrr/Sbrr-Bot`)
 				try {
 					let anu = await axios.get('https://tinyurl.com/api-create.php?url=' + text)
 					m.reply('Url : ' + anu.data)
@@ -2153,7 +2153,7 @@ module.exports = vino = async (vino, m, msg, store, groupCache) => {
 			break
 			case 'git': case 'gitclone': {
 				if (!isLimit) return m.reply(mess.limit)
-				if (!args[0]) return m.reply(`Example: ${prefix + command} https://github.com/vinosbrr/hitori`)
+				if (!args[0]) return m.reply(`Example: ${prefix + command} https://github.com/vinosbrr/Sbrr-Bot`)
 				if (!isUrl(args[0]) && !args[0].includes('github.com')) return m.reply('Gunakan Url Github!')
 				let [, user, repo] = args[0].match(/(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i) || []
 				try {

@@ -70,7 +70,7 @@ const checkSewaGroup = (gid, _dir) => {
  * @param {object} WAConnection
  * @param {Object} _dir 
  */
-const expiredCheck = (naze, _dir) => {
+const expiredCheck = (vino, _dir) => {
     setInterval(() => {
         let position = null
         Object.keys(_dir).forEach((i) => {
@@ -80,9 +80,9 @@ const expiredCheck = (naze, _dir) => {
         })
         if (position !== null) {
             console.log(`Sewa expired: ${_dir[position].id}`)
-            naze.sendMessage(_dir[position].id, { text: `Masa sewa di grup ini telah habis, bot otomatis keluar!` })
+            vino.sendMessage(_dir[position].id, { text: `Masa sewa di grup ini telah habis, bot otomatis keluar!` })
             .then( res => {
-              naze.groupLeave(_dir[position].id)
+              vino.groupLeave(_dir[position].id)
               _dir.splice(position, 1)
               fs.writeFileSync('./database/sewa.json', JSON.stringify(_dir, null, 2))
             })

@@ -61,7 +61,7 @@ const { isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, sleep } =
 /*
 	* Create By vino
 	* Follow https://github.com/vinosbrr
-	* Whatsapp : https://whatsapp.com/channel/0029VaWOkNm7DAWtkvkJBK43
+	* Whatsapp : https://chat.whatsapp.com/FTHfkf71guTK62aULxMEYf
 */
 
 async function startvinoBot() {

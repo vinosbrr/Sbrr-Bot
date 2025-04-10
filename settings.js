@@ -20,15 +20,15 @@ global.pairing_code = true
 global.number_bot = '' // Kalo pake panel bisa masukin nomer di sini, jika belum ambil session. Format : '628xx'
 
 global.fake = {
-	anonim: 'https://telegra.ph/file/95670d63378f7f4210f03.png',
+	anonim: 'https://telegra.ph/file/fe4843a1261fc414542c4.jpg',
 	thumbnailUrl: 'https://telegra.ph/file/fe4843a1261fc414542c4.jpg',
-	thumbnail: fs.readFileSync('./src/media/naze.png'),
+	thumbnail: fs.readFileSync('./src/media/vino.png'),
 	docs: fs.readFileSync('./src/media/fake.pdf'),
 	listfakedocs: ['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet','application/vnd.openxmlformats-officedocument.presentationml.presentation','application/vnd.openxmlformats-officedocument.wordprocessingml.document','application/pdf'],
 }
 
 global.my = {
-	yt: 'https://youtube.com/c/Oktavino_Tp',
+	yt: 'https://youtube.com/@wongesbrr?si=R12IRvgfjAuG38ny',
 	gh: 'https://github.com/vinosbrr',
 	gc: 'https://chat.whatsapp.com/FTHfkf71guTK62aULxMEYf',
 	ch: '120363250409960161@newsletter',
